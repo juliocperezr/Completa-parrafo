@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Completar Párrafo</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="card">
+
+            <h1>Completa el párrafo</h1>
+
+            <p class="instruccion">
+                Arrastra las palabras correctas desde el banco de palabras
+                hacia los espacios vacíos del texto.
+            </p>
+<div class="juego-layout">
+            <div class="parrafo">
+
+                Toda acción u <span class="drop-zone" data-correct="omisión"></span>
+                cometida por una autoridad <span class="drop-zone" data-correct="educativa escolar"></span>,
+                figura educativa o persona que no pertenece al plantel educativo
+                pero que proporciona un servicio, que implique un
+                <span class="drop-zone" data-correct="descuido"></span>,
+                negligencia, <span class="drop-zone" data-correct="abuso físico"></span>
+                o psicológico que derive en un
+                <span class="drop-zone" data-correct="daño corporal"></span>
+                y/o emocional en contra de niñas, niños y adolescentes
+                y que ocurre en el <span class="drop-zone" data-correct="ámbito escolar"></span>
+                o se deriva de este.
+
+            </div>
+
+
+<div class="panel-palabras">
+            <h2>Banco de palabras</h2>
+
+            <div class="banco-palabras" id="bancoPalabras">
+
+                <div class="word" draggable="true">educativa escolar</div>
+                <div class="word" draggable="true">descuido</div>
+                <div class="word" draggable="true">abuso físico</div>
+                <div class="word" draggable="true">daño corporal</div>
+                <div class="word" draggable="true">ámbito escolar</div>
+
+                <!-- distractores -->
+                <div class="word" draggable="true">educativa local</div>
+                <div class="word" draggable="true">ámbito familiar</div>
+                <div class="word" draggable="true">uso de la fuerza</div>
+
+            </div>
+</div>
+
+</div>
+            <div class="botones">
+                <button id="verificar">Verificar</button>
+                <button id="reiniciar">Reiniciar</button>
+            </div>
+
+            <div id="mensaje"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

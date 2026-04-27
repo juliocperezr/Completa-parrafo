@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f6fb;
+    padding:40px 20px;
+}
+
+.contenedor{
+    max-width:1300px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+h1{
+    text-align:center;
+    color:#6f123a;
+    margin-bottom:15px;
+}
+
+.instruccion{
+    text-align:center;
+    margin-bottom:30px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* NUEVO LAYOUT IZQUIERDA / DERECHA */
+
+.juego-layout{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:30px;
+    align-items:start;
+}
+
+/* LADO IZQUIERDO */
+
+.parrafo{
+    font-size:18px;
+    line-height:2.2;
+    background:#fafafa;
+    padding:30px;
+    border-radius:16px;
+    min-height:420px;
+}
+
+/* LADO DERECHO */
+
+.panel-palabras{
+    background:#fafafa;
+    padding:25px;
+    border-radius:16px;
+    border:1px solid #eee;
+}
+
+.panel-palabras h2{
+    color:#6f123a;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.banco-palabras{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.word{
+    background:#d0b787;
+    color:white;
+    padding:12px 18px;
+    border-radius:12px;
+    cursor:grab;
+    user-select:none;
+    font-weight:bold;
+    text-align:center;
+}
+
+.drop-zone{
+    display:inline-block;
+    min-width:170px;
+    min-height:45px;
+    border:2px dashed #999;
+    border-radius:10px;
+    vertical-align:middle;
+    text-align:center;
+    padding:8px;
+    background:white;
+    margin:0 5px;
+    font-weight:bold;
+}
+
+.correct{
+    border:2px solid #1ca64c !important;
+    background:#effff4;
+}
+
+.incorrect{
+    border:2px solid #d62828 !important;
+    background:#fff1f1;
+}
+
+.botones{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    margin-top:35px;
+    margin-bottom:20px;
+}
+
+button{
+    background:#6f123a;
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+#mensaje{
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .juego-layout{
+        grid-template-columns:1fr;
+    }
+
+    .parrafo{
+        min-height:auto;
+    }
+
+}
