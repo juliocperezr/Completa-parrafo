@@ -8,7 +8,7 @@ body{
     font-family:Arial, sans-serif;
     background:#f4f6fb;
     padding:40px 20px;
-     font-size:28px; 
+     
 }
 
 .contenedor{
@@ -27,6 +27,7 @@ h1{
     text-align:center;
     color:#6f123a;
     margin-bottom:15px;
+    font-size:22px; 
 }
 
 .instruccion{
@@ -34,6 +35,7 @@ h1{
     margin-bottom:30px;
     color:#555;
     line-height:1.6;
+    font-size:15px;
 }
 
 /* NUEVO LAYOUT IZQUIERDA / DERECHA */
