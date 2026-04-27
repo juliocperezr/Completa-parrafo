@@ -142,16 +142,136 @@ button:hover{
     margin-top:15px;
 }
 
-/* RESPONSIVE */
+/* ================================================= */
+/* ===== RESPONSIVE: SIEMPRE 2 COLUMNAS ============ */
+/* ================================================= */
 
-@media(max-width:900px){
+/* Laptop pequeña */
+@media (max-width:1100px){
 
-    .juego-layout{
+    body{
+        padding:16px;
+    }
+
+    .game-container{
+        grid-template-columns:1.8fr .95fr;
+        gap:14px;
+    }
+
+    .left{
+        gap:14px;
+    }
+
+    .right-panel{
+        position:static;
+    }
+
+    .dropzone{
+        min-height:210px;
+    }
+
+    .dropzone h3{
+        font-size:15px;
+    }
+
+    .draggable{
+        font-size:15px;
+    }
+}
+
+/* Tablet */
+@media (max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    .game-container{
+        grid-template-columns:1.6fr .9fr;
+        gap:10px;
+    }
+
+    .left{
         grid-template-columns:1fr;
+        gap:12px;
     }
 
-    .parrafo{
+    h2{
+        margin-bottom:16px;
+    }
+
+    .dropzone{
         min-height:auto;
+        padding:12px;
     }
 
+    .dropzone span{
+        min-height:72px;
+    }
+
+    .dropzone h3{
+        font-size:14px;
+    }
+
+    .draggable{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .buttons{
+        gap:8px;
+    }
+
+    button{
+        padding:10px 14px;
+        font-size:14px;
+    }
+
+    .result-message{
+        font-size:.92rem;
+    }
+}
+
+/* Celular */
+@media (max-width:480px){
+
+    .game-container{
+        grid-template-columns:1.45fr .85fr;
+        gap:8px;
+    }
+
+    h2{
+        font-size:1rem;
+        margin-bottom:14px;
+    }
+
+    .dropzone{
+        padding:10px;
+        gap:10px;
+    }
+
+    .dropzone h3{
+        font-size:13px;
+        line-height:1.3;
+    }
+
+    .dropzone span{
+        min-height:64px;
+        padding:8px;
+    }
+
+    .draggable{
+        font-size:12px;
+        padding:8px;
+    }
+
+    button{
+        font-size:12px;
+        padding:8px 10px;
+    }
+
+    .result-message{
+        font-size:.82rem;
+        min-height:28px;
+    }
 }
