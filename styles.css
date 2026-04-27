@@ -8,6 +8,7 @@ body{
     font-family:Arial, sans-serif;
     background:#f4f6fb;
     padding:40px 20px;
+     font-size:28px; 
 }
 
 .contenedor{
@@ -47,7 +48,7 @@ h1{
 /* LADO IZQUIERDO */
 
 .parrafo{
-    font-size:18px;
+    font-size:15px;
     line-height:2.2;
     background:#fafafa;
     padding:30px;
@@ -68,6 +69,7 @@ h1{
     color:#6f123a;
     margin-bottom:20px;
     text-align:center;
+    font-size:20px; 
 }
 
 .banco-palabras{
@@ -86,6 +88,7 @@ h1{
     user-select:none;
     font-weight:bold;
     text-align:center;
+    font-size:14px;
 }
 
 .drop-zone{
@@ -100,6 +103,7 @@ h1{
     background:white;
     margin:0 5px;
     font-weight:bold;
+    font-size:14px;
 }
 
 .correct{
